@@ -10,21 +10,18 @@ export default function ClientAppWrapper({
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
+        const onPageLoad = () => setLoaded(true);
         if (document.readyState === 'complete') {
-            setLoaded(true);
-            document.body.style.overflow = '';
+            onPageLoad();
         } else {
-            const handleLoad = () => {
-                setLoaded(true);
-                document.body.style.overflow = '';
-            };
-
-            window.addEventListener('load', handleLoad);
-            document.body.style.overflow = 'hidden';
-
-            return () => window.removeEventListener('load', handleLoad);
+            window.addEventListener('load', onPageLoad);
+            return () => window.removeEventListener('load', onPageLoad);
         }
     }, []);
+
+    useEffect(() => {
+        document.body.style.overflow = loaded ? '' : 'hidden';
+    }, [loaded]);
 
     return <>{loaded ? children : <Preloader />}</>;
 }
