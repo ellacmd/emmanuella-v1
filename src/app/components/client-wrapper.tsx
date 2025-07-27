@@ -16,7 +16,8 @@ export default function ClientAppWrapper({
         } else {
             const handleLoad = () => {
                 setLoaded(true);
-                document.body.style.overflow = ''; 
+                document.body.style.overflow = '';
+            };
 
             window.addEventListener('load', handleLoad);
             document.body.style.overflow = 'hidden';
