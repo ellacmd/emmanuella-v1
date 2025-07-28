@@ -135,8 +135,8 @@ export default function ProjectsPage() {
             image: '/assets/portfolio.png',
             video: '/videos/portfolio.mp4',
             hasGithub: true,
-            githubUrl: 'https://github.com/ellacmd/feedbackApp',
-            liveUrl: 'https://feedback-app-e.netlify.app/',
+            githubUrl: 'https://github.com/ellacmd/emmanuella-v1',
+            liveUrl: 'https://www.emmanuella.dev/',
             techStack: ['NextJS', 'Framer Motion', 'Tailwind CSS', 'Spline'],
         },
     ];

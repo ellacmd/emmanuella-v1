@@ -140,7 +140,7 @@ const LichessBlock = () => (
         <div className='w-full flex justify-center'>
             <iframe
                 src='https://lichess.org/training/frame?theme=brown&bg=dark'
-                className='w-[400px] aspect-[10/11] border-0'
+                className='w-[400px] aspect-[9/11] border-0'
             />
         </div>
     </Block>
