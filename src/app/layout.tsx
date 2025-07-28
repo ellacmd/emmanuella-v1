@@ -12,8 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     title: 'Emmanuella Batubo - Frontend Developer',
-    description:
-        'The personal portfolio of Emmanuella Batubo, a frontend developer specializing in React, Next.js, Angular,and modern UI/UX design. Built with Next.js for performance, SEO optimization, and a seamless user experience.',
+    description: '',
     keywords: [
         'Emmanuella Batubo',
         'Emmanuella Trust Enomah',
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Emmanuella Batubo – Frontend Developer Portfolio',
         description:
-            'Explore the work of Emmanuella Batubo, a frontend developer crafting elegant, responsive, and performant web experiences using Next.js, Angular, React,and modern frontend tech.',
+            'Emmanuella Batubo is a frontend developer passionate about building fast, modern web experiences using React, Next.js, and Angular. This portfolio highlights her ability to ship scalable, SEO-friendly, and beautifully designed interfaces—ideal for fast-moving startups. Built with Next.js for speed, performance, and flexibility.',
         url: 'https://emmanuella.dev',
         siteName: 'Emmanuella Batubo Portfolio',
         type: 'website',
