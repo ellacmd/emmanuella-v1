@@ -12,11 +12,11 @@ const Hero = () => {
     const splineRef = useRef(null);
     return (
         <div className='w-full h-screen relative'>
-            {/* <LazySpline
+            <LazySpline
                 ref={splineRef}
                 scene='https://prod.spline.design/9O4Rqq5s2fLp7bDh/scene.splinecode'
                 className='w-full h-full'
-            /> */}
+            />
             <div
                 className='absolute bottom-5 right-5 w-42 h-10 bg-black rounded'
                 style={{ zIndex: 10 }}
