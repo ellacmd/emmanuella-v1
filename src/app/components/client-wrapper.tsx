@@ -10,12 +10,14 @@ export default function ClientAppWrapper({
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        const onPageLoad = () => setLoaded(true);
-        if (document.readyState === 'complete') {
-            onPageLoad();
+        const onReady = () => setLoaded(true);
+
+        if (document.readyState !== 'loading') {
+            onReady();
         } else {
-            window.addEventListener('load', onPageLoad);
-            return () => window.removeEventListener('load', onPageLoad);
+            document.addEventListener('DOMContentLoaded', onReady);
+            return () =>
+                document.removeEventListener('DOMContentLoaded', onReady);
         }
     }, []);
 
