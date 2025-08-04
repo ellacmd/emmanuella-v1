@@ -102,7 +102,7 @@ export default function AboutSection() {
             id='about'
             className='w-full min-h-[80vh]  md:pb-24  flex flex-col items-center'>
             <h3 className='text-3xl md:text-5xl font-extrabold text-center text-white mb-16'>
-                <span className='bg-gradient-to-r from-[#ff66c4] to-pink-400 bg-clip-text text-transparent'>
+                <span className='bg-gradient-to-r from-[#c] to-pink-400 bg-clip-text text-transparent'>
                     About
                 </span>
                 Me

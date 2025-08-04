@@ -1,16 +1,25 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-    images: {
-        remotePatterns: [
+    async redirects() {
+        return [
             {
-                protocol: 'https',
-                hostname: 'images.unsplash.com',
-                port: '',
-                pathname: '/**',
+              source: '/:path*',
+              has: [
+                {
+                  type: 'host',
+                  value: 'emmanuella.dev',
+                },
+              ],
+              permanent: true,
+              destination: 'https://www.emmanuella.dev/:path*',
             },
-        ],
-    },
+          ];
+      
+      },
 };
 
-export default nextConfig;
+
+  
+  module.exports = nextConfig;
+  

@@ -41,6 +41,9 @@ export const metadata: Metadata = {
         siteName: 'Emmanuella Batubo Portfolio',
         type: 'website',
     },
+    alternates: {
+        canonical: 'https://www.emmanuella.dev',
+    },
 };
 
 export default function RootLayout({
